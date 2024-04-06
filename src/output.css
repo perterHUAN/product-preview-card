@@ -598,6 +598,14 @@ video {
   height: 1.5rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -620,6 +628,10 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.basis-2\/4 {
+  flex-basis: 50%;
 }
 
 .place-content-center {
@@ -698,6 +710,11 @@ video {
 .bg-\[\#3c8067\] {
   --tw-bg-opacity: 1;
   background-color: rgb(60 128 103 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-5 {
@@ -782,6 +799,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .font-semibold {
@@ -877,4 +898,51 @@ video {
 .hover\:bg-\[\#1a4031\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(26 64 49 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:max-w-sm {
+    max-width: 24rem;
+  }
+
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:basis-2\/4 {
+    flex-basis: 50%;
+  }
+
+  .sm\:basis-\[\] {
+    flex-basis: ;
+  }
+
+  .sm\:basis-\[33em\] {
+    flex-basis: 33em;
+  }
+
+  .sm\:basis-\[33ch\] {
+    flex-basis: 33ch;
+  }
+
+  .sm\:items-stretch {
+    align-items: stretch;
+  }
+
+  .sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
 }

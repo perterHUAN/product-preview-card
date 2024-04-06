@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,25 +22,31 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body
-    class="font-[Montserrat] max-w-sm grid place-content-center py-10 px-5 bg-[#f2ebe3]"
+    class="font-[Montserrat] text-sm grid place-content-center py-10 px-5 bg-[#f2ebe3] min-h-full"
   >
     <main>
-      <div class="rounded-lg overflow-hidden bg-[#fff]">
-        <picture>
+      <div
+        class="max-w-sm sm:max-w-lg sm:flex rounded-lg overflow-hidden bg-[#fff]"
+      >
+        <picture class="sm:basis-[33ch]">
           <source
             srcset="../images/image-product-desktop.jpg"
             media="(min-width: 640px)"
           />
-          <img src="../images/image-product-mobile.jpg" alt="perfume" />
+          <img
+            src="../images/image-product-mobile.jpg"
+            alt="perfume"
+            class="sm:object-cover h-full"
+          />
         </picture>
 
-        <div class="p-5">
+        <div class="p-5 sm:basis-[33ch] sm:p-6">
           <p
             class="mb-3 uppercase tracking-[0.5em] font-semibold text-[#6c7689]"
           >
             Perfume
           </p>
-          <h1 class="mb-3 font-[Fraunces] text-2xl font-bold text-[#1c232b]">
+          <h1 class="mb-3 font-[Fraunces] text-3xl font-bold text-[#1c232b]">
             Gabrielle Essence Eau De Parfum
           </h1>
           <p class="text-[#6c7689] mb-5">
