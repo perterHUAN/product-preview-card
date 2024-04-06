@@ -21,9 +21,11 @@
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
+  <body
+    class="font-[Montserrat] max-w-sm grid place-content-center py-10 px-5 bg-[#f2ebe3]"
+  >
     <main>
-      <div>
+      <div class="rounded-lg overflow-hidden bg-[#fff]">
         <picture>
           <source
             srcset="../images/image-product-desktop.jpg"
@@ -32,19 +34,31 @@
           <img src="../images/image-product-mobile.jpg" alt="perfume" />
         </picture>
 
-        <div>
-          <p>Perfume</p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>
+        <div class="p-5">
+          <p
+            class="mb-3 uppercase tracking-[0.5em] font-semibold text-[#6c7689]"
+          >
+            Perfume
+          </p>
+          <h1 class="mb-3 font-[Fraunces] text-2xl font-bold text-[#1c232b]">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-[#6c7689] mb-5">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <p>
-            <em>$1499</em>
-            <del>$169.99</del>
+          <p class="flex items-center">
+            <em
+              class="not-italic text-[#3c8067] font-bold text-4xl mr-5 font-[Fraunces]"
+              >$1499</em
+            >
+            <del class="text-[#6c7689] text-sm">$169.99</del>
           </p>
-          <button>
-            <img src="../images/icon-cart.svg" alt="cart" /> Add to Cart
+          <button
+            class="w-full bg-[#3c8067] text-[#fff] py-3 mt-3 rounded-md font-semibold flex justify-center items-center space-x-3 hover:bg-[#1a4031]"
+          >
+            <img src="../images/icon-cart.svg" alt="cart" class="w-5" />
+            <span>Add to Cart</span>
           </button>
         </div>
       </div>
